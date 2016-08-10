@@ -1,0 +1,5 @@
+---
+- name: install from brew cask
+  homebrew_cask: name=docker state=present
+- name: install docker-compose from brew
+  homebrew: name=docker-compose state=present

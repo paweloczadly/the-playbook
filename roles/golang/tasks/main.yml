@@ -1,0 +1,10 @@
+---
+- name: install golang
+  homebrew: name=golang state=present
+- name: create go dev environment
+  file: path={{ ansible_env.HOME }}/dev/{{ item }} state=directory
+  with_items:
+  - go
+  - go/bin
+  - go/pkg
+  - go/src

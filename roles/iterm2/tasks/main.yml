@@ -1,0 +1,7 @@
+---
+- name: install from brew cask
+  homebrew_cask: name=iterm2 state=present
+- name: clone powerline fonts
+  git: repo=https://github.com/powerline/fonts dest=/tmp/fonts
+- name: install powerline fonts
+  script: /tmp/fonts/install.sh creates="{{ ansible_env.HOME }}/Library/Fonts/Anonymice Powerline Bold Italic.ttf"

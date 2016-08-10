@@ -1,0 +1,13 @@
+---
+- name: download install script
+  get_url: url=https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh dest=/tmp/oh-my-zsh-install.sh
+- name: run install script
+  script: /tmp/oh-my-zsh-install.sh creates={{ ansible_env.HOME }}/.oh-my-zsh
+- name: create ~/.oh-my-zsh/custom/templates
+  file: path={{ ansible_env.HOME }}/.oh-my-zsh/custom/themes state=directory
+- name: clone powerline template
+  git: repo=https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme dest={{ ansible_env.HOME }}/.oh-my-zsh/custom/themes/oh-my-zsh-powerline-theme
+- name: copy powerline.zsh-theme to ~/.oh-my-zsh/themes
+  copy: src={{ ansible_env.HOME }}/.oh-my-zsh/custom/themes/oh-my-zsh-powerline-theme/powerline.zsh-theme dest={{ ansible_env.HOME }}/.oh-my-zsh/custom/themes/powerline.zsh-theme
+- name: .zshrc
+  template: src=.zshrc dest={{ ansible_env.HOME }}/.zshrc

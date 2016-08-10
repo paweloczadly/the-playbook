@@ -1,0 +1,3 @@
+---
+- name: setup ~/.gitconfig 
+  template: src=.gitconfig dest={{ ansible_env.HOME }}/.gitconfig 

@@ -1,0 +1,18 @@
+---
+- hosts: all
+  vars:
+  - git_name: "Pawel Oczadly"
+  - git_email: "paweloczadly@gmail.com"
+  roles:
+  - { role: chrome, tags: ['chrome'] }
+  - { role: vlc, tags: ['vlc'] }
+  - { role: atom, tags: ['atom'] }
+  - { role: dev-env, tags: ['dev-env'] }
+  - { role: iterm2, tags: ['iterm2'] }
+  - { role: oh-my-zsh, tags: ['oh-my-zsh'] }
+  - { role: vim, tags: ['vim'] }
+  - { role: git, tags: ['git'] }
+  - { role: golang, tags: ['golang'] }
+  - { role: docker, tags: ['docker'] }
+  - { role: virtualbox, tags: ['virtualbox'] }
+  - { role: vagrant, tags: ['vagrant'] }

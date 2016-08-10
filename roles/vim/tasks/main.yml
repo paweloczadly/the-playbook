@@ -1,0 +1,21 @@
+---
+- name: create autoload and bundle directories 
+  file: path={{ ansible_env.HOME }}/{{ item }} state=directory
+  with_items:
+  - .vim
+  - .vim/autoload
+  - .vim/bundle
+  - .vim/colors
+- name: download pathogen
+  get_url: url=https://tpo.pe/pathogen.vim dest={{ ansible_env.HOME }}/.vim/autoload/pathogen.vim
+- name: download vim plugins
+  git: repo={{ item.url }} dest={{ ansible_env.HOME }}/.vim/bundle/{{ item.name }}
+  with_items:
+  - { url: "https://github.com/tpope/vim-fugitive", name: vim-fugitive }
+  - { url: "https://github.com/scrooloose/nerdtree", name: nerdtree }
+  - { url: "https://github.com/bling/vim-airline", name: vim-airline }
+  - { url: "https://github.com/fatih/vim-go", name: vim-go }
+- name: download color scheme
+  get_url: url=https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim dest={{ ansible_env.HOME }}/.vim/colors/jellybeans.vim
+- name: .vimrc
+  template: src=.vimrc dest={{ ansible_env.HOME }}/.vimrc
