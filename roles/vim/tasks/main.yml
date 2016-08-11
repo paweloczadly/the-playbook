@@ -1,5 +1,5 @@
 ---
-- name: create autoload and bundle directories 
+- name: create autoload and bundle directories
   file: path={{ ansible_env.HOME }}/{{ item }} state=directory
   with_items:
   - .vim
@@ -19,3 +19,5 @@
   get_url: url=https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim dest={{ ansible_env.HOME }}/.vim/colors/jellybeans.vim
 - name: .vimrc
   template: src=.vimrc dest={{ ansible_env.HOME }}/.vimrc
+- name: install macvim from brew cask
+  homebrew_cask: name=macvim state=present
