@@ -15,5 +15,5 @@ My dev OS X setup with Ansible.
 Set up the **git_name** and **git_email** variables in the playbook.yml file:
 
 ```bash
-$ ansible-playbook --connection=local -i localhost, --tags oh-my-zsh playbook.yml
+$ ansible-playbook --connection=local -i localhost, playbook.yml
 ```
