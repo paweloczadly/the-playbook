@@ -17,7 +17,7 @@ POWERLINE_GIT_DIRTY="💩"
 POWERLINE_GIT_UNTRACKED="🐽"
 
 ######################### PLUGINS #########################
-plugins=(git docker)
+plugins=(go git docker)
 
 ######################### USER OPTIONS #########################
 
