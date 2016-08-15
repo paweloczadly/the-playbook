@@ -1,3 +1,0 @@
----
-- name: install from brew cask 
-  homebrew_cask: name=atom state=present 
