@@ -18,3 +18,4 @@
   - { role: virtualbox, tags: ['virtualbox'] }
   - { role: vagrant, tags: ['vagrant'] }
   - { role: intellij, tags: ['intellij'] }
+  - { role: cf, tags: ['cf'] }

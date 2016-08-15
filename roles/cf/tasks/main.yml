@@ -1,0 +1,5 @@
+---
+- name: add cloudfoundry/tap
+  homebrew_tap: name=cloudfoundry/tap state=present
+- name: install from brew 
+  homebrew: name=cf state=present 
