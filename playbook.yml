@@ -5,6 +5,7 @@
   - git_email: "paweloczadly@gmail.com"
   roles:
   - { role: chrome, tags: ['chrome'] }
+  - { role: firefox, tags: ['firefox'] }
   - { role: dropbox, tags: ['dropbox'] }
   - { role: vlc, tags: ['vlc'] }
   - { role: atom, tags: ['atom'] }
