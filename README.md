@@ -6,6 +6,7 @@ My dev OS X setup with Ansible.
 
 * Install [brew.sh](http://brew.sh/)
 * Install ansible:
+
   ```bash
   $ brew install ansible
   ```
