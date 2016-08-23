@@ -2,10 +2,6 @@
   name = {{ git_name }}
   email = {{ git_email }}
 [alias]
-  br = branch
-  ck = checkout
-  cm = commit
-  lst = log -1 HEAD
-  pl = pull
-  ps = push
-  st = status
+  {% for key, value in git_aliases.iteritems() %}
+  {{ key }} = {{ value }}
+  {% endfor %}

@@ -3,6 +3,14 @@
   vars:
   - git_name: "Pawel Oczadly"
   - git_email: "paweloczadly@gmail.com"
+  - git_aliases:
+      br: branch
+      ck: checkout
+      cm: commit
+      lst: log -1 HEAD
+      pl: pull
+      ps: push
+      st: status
   - go_path: "{{ ansible_env.HOME }}/dev/go"
   - zsh_plugins:
     - git
