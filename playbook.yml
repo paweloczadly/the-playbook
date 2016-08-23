@@ -3,6 +3,7 @@
   vars:
   - git_name: "Pawel Oczadly"
   - git_email: "paweloczadly@gmail.com"
+  - go_path: "{{ ansible_env.HOME }}/dev/go"
   - zsh_plugins:
     - git
     - go

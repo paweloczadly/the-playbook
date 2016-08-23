@@ -18,7 +18,7 @@ plugins=({{ zsh_plugins | join(" ") }})
 ######################### USER OPTIONS #########################
 
 # GOLANG setup:
-export GOPATH=$HOME/dev/go
+export GOPATH={{ go_path }}
 export PATH=$GOPATH/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
