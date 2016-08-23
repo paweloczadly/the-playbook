@@ -17,7 +17,7 @@ POWERLINE_GIT_DIRTY="💩"
 POWERLINE_GIT_UNTRACKED="🐽"
 
 ######################### PLUGINS #########################
-plugins=(go git docker)
+plugins=({{ zsh_plugins | join(" ") }})
 
 ######################### USER OPTIONS #########################
 

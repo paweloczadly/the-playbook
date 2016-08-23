@@ -3,6 +3,10 @@
   vars:
   - git_name: "Pawel Oczadly"
   - git_email: "paweloczadly@gmail.com"
+  - zsh_plugins:
+    - git
+    - go
+    - docker
   roles:
   - { role: chrome, tags: ['chrome'] }
   - { role: firefox, tags: ['firefox'] }
