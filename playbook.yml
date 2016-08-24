@@ -12,6 +12,11 @@
       ps: push
       st: status
   - go_path: "{{ ansible_env.HOME }}/dev/go"
+  - vim_plugins:
+      vim-fugitive: https://github.com/tpope/vim-fugitive
+      nerdtree:     https://github.com/scrooloose/nerdtree
+      vim-airline:  https://github.com/bling/vim-airline
+      vim-go:       https://github.com/fatih/vim-go
   - zsh_plugins:
     - git
     - go
