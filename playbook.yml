@@ -47,3 +47,4 @@
   - { role: vagrant, tags: ['vagrant'] }
   - { role: intellij, tags: ['intellij'] }
   - { role: cf, tags: ['cf'] }
+  - { role: cli-utils, tags: ['cli-utils'] }
