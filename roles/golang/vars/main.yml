@@ -1,0 +1,2 @@
+---
+go_path: "{{ dev_home }}/go"

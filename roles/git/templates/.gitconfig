@@ -1,3 +1,6 @@
+# This file is managed by Ansible
+# DO NOT MODIFY IT MANUALLY!!!
+
 [user]
   name = {{ git_name }}
   email = {{ git_email }}

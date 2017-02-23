@@ -1,0 +1,11 @@
+---
+git_name: "Pawel Oczadly"
+git_email: "paweloczadly@gmail.com"
+git_aliases:
+  br: branch
+  ck: checkout
+  cm: commit
+  lst: log -1 HEAD
+  pl: pull
+  ps: push
+  st: status

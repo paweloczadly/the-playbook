@@ -1,42 +1,14 @@
 ---
 - hosts: all
-  vars:
-  - git_name: "Pawel Oczadly"
-  - git_email: "paweloczadly@gmail.com"
-  - git_aliases:
-      br: branch
-      ck: checkout
-      cm: commit
-      lst: log -1 HEAD
-      pl: pull
-      ps: push
-      st: status
-  - go_path: "{{ ansible_env.HOME }}/dev/go"
-  - vim_plugins:
-      vim-fugitive: https://github.com/tpope/vim-fugitive
-      nerdtree:     https://github.com/scrooloose/nerdtree
-      vim-airline:  https://github.com/bling/vim-airline
-      vim-go:       https://github.com/fatih/vim-go
-  - zsh_plugins:
-    - git
-    - go
-    - docker
-  - zsh_theme: powerline
-  - zsh_theme_settings:
-      POWERLINE_RIGHT_A: exit-status-on-fail
-      POWERLINE_HIDE_USER_NAME: true
-      POWERLINE_HIDE_HOST_NAME: true
-      POWERLINE_PATH: short
-      POWERLINE_GIT_CLEAN: 😎
-      POWERLINE_GIT_DIRTY: 💩
-      POWERLINE_GIT_UNTRACKED: 🐽
+  # vars: # override vars here...
+  # - key: value
   roles:
   - { role: chrome, tags: ['chrome'] }
   - { role: firefox, tags: ['firefox'] }
   - { role: dropbox, tags: ['dropbox'] }
   - { role: vlc, tags: ['vlc'] }
   - { role: atom, tags: ['atom'] }
-  - { role: dev-env, tags: ['dev-env'] }
+  - { role: dev-env, tags: ['dev-env', 'golang'] }
   - { role: iterm2, tags: ['iterm2'] }
   - { role: oh-my-zsh, tags: ['oh-my-zsh'] }
   - { role: vim, tags: ['vim'] }
