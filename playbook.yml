@@ -1,7 +1,10 @@
 ---
-- hosts: all
+- hosts: localhost
+  connection: local
+
   # vars: # override vars here...
   # - key: value
+
   roles:
   - { role: atom, tags: ['atom'] }
   - { role: cf, tags: ['cf'] }
