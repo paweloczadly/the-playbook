@@ -2,3 +2,5 @@
 cli_utils:
   - htop
   - unrar
+  - bash-completion
+  - watch

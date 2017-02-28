@@ -1,0 +1,7 @@
+---
+- name: download minikube from GitHub release
+  get_url: url="{{ minikube_url }}" dest="{{ minikube_dest }}"
+- name: change minikube mode
+  file: path="{{ minikube_dest }}" mode=111
+- name: install kubectl from brew
+  homebrew: name=kubectl state=present

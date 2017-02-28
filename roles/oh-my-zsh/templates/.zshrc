@@ -22,3 +22,4 @@ export GOPATH={{ go_path }}
 export PATH=$GOPATH/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
+source <(kubectl completion zsh)

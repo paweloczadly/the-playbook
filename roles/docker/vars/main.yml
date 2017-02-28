@@ -1,0 +1,2 @@
+---
+docker_machine_driver_xhyve: /usr/local/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
