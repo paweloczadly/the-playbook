@@ -1,3 +1,9 @@
+zsh_install_script_url: https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+zsh_install_script_dest: /tmp/oh-my-zsh-install.sh
+zsh_fonts_url: https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme
+zsh_fonts_dest: "{{ ansible_env.HOME }}/.oh-my-zsh/custom/themes/oh-my-zsh-powerline-theme"
+zsh_theme_src: "{{ ansible_env.HOME }}/.oh-my-zsh/custom/themes/oh-my-zsh-powerline-theme/powerline.zsh-theme"
+zsh_theme_dest: "{{ ansible_env.HOME }}/.oh-my-zsh/custom/themes/powerline.zsh-theme"
 zsh_plugins:
 - git
 - go

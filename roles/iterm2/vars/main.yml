@@ -1,0 +1,3 @@
+---
+iterm2_fonts_url: https://github.com/powerline/fonts
+iterm2_example_font: "{{ ansible_env.HOME }}/Library/Fonts/Anonymice Powerline Bold Italic.ttf"

@@ -1,3 +1,6 @@
+"This file is managed by Ansible"
+"DO NOT MODIFY IT MANUALLY!!!"
+
 "PATHOGEN"
 execute pathogen#infect()
 execute pathogen#helptags()

@@ -1,5 +1,3 @@
 ---
 - name: create ~/dev
-  file: path={{ item }} state=directory
-  with_items:
-  - "{{ dev_home }}"
+  file: path="{{ dev_home }}" state=directory

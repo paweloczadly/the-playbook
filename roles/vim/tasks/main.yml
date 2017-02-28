@@ -7,12 +7,12 @@
   - .vim/bundle
   - .vim/colors
 - name: download pathogen
-  get_url: url=https://tpo.pe/pathogen.vim dest={{ ansible_env.HOME }}/.vim/autoload/pathogen.vim
+  get_url: url="{{ vim_pathogen_url }}" dest="{{ vim_pathogen_dest }}"
 - name: download vim plugins
   git: repo={{ item.value }} dest={{ ansible_env.HOME }}/.vim/bundle/{{ item.key }}
   with_dict: "{{ vim_plugins }}"
 - name: download color scheme
-  get_url: url=https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim dest={{ ansible_env.HOME }}/.vim/colors/jellybeans.vim
+  get_url: url="{{ vim_color_scheme_url }}" dest="{{ vim_color_scheme_dest }}"
 - name: .vimrc
   template: src=.vimrc dest={{ ansible_env.HOME }}/.vimrc
 - name: install macvim from brew cask
