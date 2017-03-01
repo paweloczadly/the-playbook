@@ -4,3 +4,4 @@ cli_utils:
   - unrar
   - bash-completion
   - watch
+  - tree
