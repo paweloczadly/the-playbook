@@ -1,4 +1,4 @@
 ---
-minikube_version: v0.16.0
+minikube_version: v0.17.1
 minikube_url: https://storage.googleapis.com/minikube/releases/{{ minikube_version }}/minikube-darwin-amd64
 minikube_dest: /usr/local/bin/minikube
