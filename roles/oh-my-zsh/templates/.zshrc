@@ -16,10 +16,6 @@ export TERM="xterm-256color"
 plugins=({{ zsh_plugins | join(" ") }})
 
 ######################### USER OPTIONS #########################
-
-# GOLANG setup:
-export GOPATH={{ go_path }}
-export PATH=$GOPATH/bin:$PATH
-
+{{ zsh_user_options }}
 source $ZSH/oh-my-zsh.sh
 source <(kubectl completion zsh)

@@ -17,3 +17,10 @@ zsh_theme_settings:
   POWERLINE_GIT_CLEAN: 😎
   POWERLINE_GIT_DIRTY: 💩
   POWERLINE_GIT_UNTRACKED: 🐽
+zsh_user_options: |
+  # dev_home env var:
+  export e={{ dev_home }}
+
+  # GOLANG setup:
+  export GOPATH={{ go_path }}
+  export PATH=$GOPATH/bin:$PATH
