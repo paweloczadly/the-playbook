@@ -23,6 +23,7 @@
   - { role: iterm2, tags: ['iterm2'] }
   - { role: k8s, tags: ['k8s']}
   - { role: oh-my-zsh, tags: ['oh-my-zsh'] }
+  - { role: scala, tags: ['scala'] }
   - { role: vagrant, tags: ['vagrant'] }
   - { role: vim, tags: ['vim'] }
   - { role: virtualbox, tags: ['virtualbox'] }
