@@ -1,13 +1,21 @@
 ---
 - name: install from brew cask
   homebrew_cask: name=docker state=present
+  when: ansible_distribution == 'MacOSX'
 - name: install xhyve driver from brew
   homebrew: name=docker-machine-driver-xhyve state=present
+  when: ansible_distribution == 'MacOSX'
 - name: change user and group of xhyve driver
   file: path="{{ docker_machine_driver_xhyve }}" owner=root group=wheel
   become: yes
   become_method: sudo
+  when: ansible_distribution == 'MacOSX'
 - name: add permissions to xhyve driver
   file: path="{{ docker_machine_driver_xhyve }}" mode="u+s"
   become: yes
   become_method: sudo
+  when: ansible_distribution == 'MacOSX'
+
+- name: install from apt
+  package: name=docker.io state=present
+  when: ansible_distribution == 'Ubuntu'
