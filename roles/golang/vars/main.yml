@@ -1,2 +1,3 @@
 ---
 go_path: "{{ dev_home }}/go"
+go_apt_repo: ppa:ubuntu-lxc/lxd-stable
