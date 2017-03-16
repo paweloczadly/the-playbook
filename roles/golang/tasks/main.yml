@@ -5,9 +5,13 @@
 
 - name: add golang apt repository
   apt_repository: repo="{{ go_apt_repo }}" state=present
+  become: yes
+  become_method: sudo
   when: ansible_distribution == 'Ubuntu'
 - name: install golang from apt
   package: name=golang state=present
+  become: yes
+  become_method: sudo
   when: ansible_distribution == 'Ubuntu'
 
 - name: create go dev environment

@@ -10,12 +10,18 @@
   apt_key:
     url: "{{ cf_apt_key_url }}"
     state: present
+  become: yes
+  become_method: sudo
   when: ansible_distribution == 'Ubuntu'
 - name: add cloudfoundry apt repository
   apt_repository:
     repo: "{{ cf_apt_repo }}"
     state: present
+  become: yes
+  become_method: sudo
   when: ansible_distribution == 'Ubuntu'
 - name: install cf-cli
   package: name=cf-cli state=present
+  become: yes
+  become_method: sudo
   when: ansible_distribution == 'Ubuntu'

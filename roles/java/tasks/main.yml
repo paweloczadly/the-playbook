@@ -5,4 +5,6 @@
 
 - name: install open-jdk from apt
   package: name=openjdk-8-jdk state=present
+  become: yes
+  become_method: sudo
   when: ansible_distribution == 'Ubuntu'
