@@ -4,3 +4,6 @@
 # Vagrant:
 .vagrant
 ubuntu-xenial-*.log
+
+# Mac:
+**/.DS_Store
