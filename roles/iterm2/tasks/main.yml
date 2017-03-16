@@ -1,7 +1,10 @@
 ---
 - name: install from brew cask
   homebrew_cask: name=iterm2 state=present
+  when: ansible_distribution == 'MacOSX'
 - name: clone powerline fonts
   git: repo="{{ iterm2_fonts_url }}" dest=/tmp/fonts
+  when: ansible_distribution == 'MacOSX'
 - name: install powerline fonts
   script: /tmp/fonts/install.sh creates="{{ iterm2_example_font }}"
+  when: ansible_distribution == 'MacOSX'

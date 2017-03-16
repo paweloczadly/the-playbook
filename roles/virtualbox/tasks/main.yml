@@ -1,3 +1,4 @@
 ---
 - name: install from brew cask
-  homebrew_cask: name=virtualbox state=present 
+  homebrew_cask: name=virtualbox state=present
+  when: ansible_distribution == 'MacOSX'

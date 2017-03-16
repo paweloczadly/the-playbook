@@ -17,3 +17,4 @@
   template: src=.vimrc dest={{ ansible_env.HOME }}/.vimrc
 - name: install macvim from brew cask
   homebrew_cask: name=macvim state=present
+  when: ansible_distribution == 'MacOSX'

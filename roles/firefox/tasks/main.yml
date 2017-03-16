@@ -1,3 +1,4 @@
 ---
-- name: install from brew cask 
-  homebrew_cask: name=firefox state=present 
+- name: install from brew cask
+  homebrew_cask: name=firefox state=present
+  when: ansible_distribution == 'MacOSX'

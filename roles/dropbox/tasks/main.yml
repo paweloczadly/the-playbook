@@ -1,3 +1,4 @@
 ---
 - name: install from brew cask
-  homebrew_cask: name=dropbox state=present 
+  homebrew_cask: name=dropbox state=present
+  when: ansible_distribution == 'MacOSX'

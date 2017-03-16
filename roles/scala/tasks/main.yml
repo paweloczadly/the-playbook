@@ -1,3 +1,4 @@
 ---
 - name: install sbt from brew
   homebrew: name=sbt state=present
+  when: ansible_distribution == 'MacOSX'

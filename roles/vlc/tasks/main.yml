@@ -1,3 +1,4 @@
 ---
-- name: install from brew cask 
-  homebrew_cask: name=vlc state=present 
+- name: install from brew cask
+  homebrew_cask: name=vlc state=present
+  when: ansible_distribution == 'MacOSX'

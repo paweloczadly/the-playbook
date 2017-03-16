@@ -1,13 +1,19 @@
 ---
 - name: download install script
   get_url: url="{{ zsh_install_script_url }}" dest="{{ zsh_install_script_dest }}"
+  when: ansible_distribution == 'MacOSX'
 - name: run install script
   script: /tmp/oh-my-zsh-install.sh creates={{ ansible_env.HOME }}/.oh-my-zsh
+  when: ansible_distribution == 'MacOSX'
 - name: create ~/.oh-my-zsh/custom/templates
   file: path={{ ansible_env.HOME }}/.oh-my-zsh/custom/themes state=directory
+  when: ansible_distribution == 'MacOSX'
 - name: clone powerline template
   git: repo="{{ zsh_fonts_url }}" dest="{{ zsh_fonts_dest }}"
+  when: ansible_distribution == 'MacOSX'
 - name: copy powerline.zsh-theme to ~/.oh-my-zsh/themes
   copy: src="{{ zsh_theme_src }}" dest="{{ zsh_theme_dest }}"
+  when: ansible_distribution == 'MacOSX'
 - name: .zshrc
   template: src=.zshrc dest={{ ansible_env.HOME }}/.zshrc
+  when: ansible_distribution == 'MacOSX'

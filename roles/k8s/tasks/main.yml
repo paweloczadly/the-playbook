@@ -1,7 +1,10 @@
 ---
 - name: download minikube from GitHub release
   get_url: url="{{ minikube_url }}" dest="{{ minikube_dest }}"
+  when: ansible_distribution == 'MacOSX'
 - name: change minikube mode
   file: path="{{ minikube_dest }}" mode=111
+  when: ansible_distribution == 'MacOSX'
 - name: install kubectl from brew
   homebrew: name=kubectl state=present
+  when: ansible_distribution == 'MacOSX'

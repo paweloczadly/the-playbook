@@ -1,5 +1,7 @@
 ---
 - name: add caskroom/versions
   homebrew_tap: name=caskroom/versions state=present
-- name: install from brew cask 
-  homebrew_cask: name=intellij-idea-ce state=present 
+  when: ansible_distribution == 'MacOSX'
+- name: install from brew cask
+  homebrew_cask: name=intellij-idea-ce state=present
+  when: ansible_distribution == 'MacOSX'
