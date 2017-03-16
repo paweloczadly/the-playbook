@@ -1,0 +1,3 @@
+---
+cf_apt_key_url: https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key
+cf_apt_repo: deb http://packages.cloudfoundry.org/debian stable main

@@ -1,5 +1,21 @@
 ---
 - name: add cloudfoundry/tap
   homebrew_tap: name=cloudfoundry/tap state=present
-- name: install from brew 
-  homebrew: name=cf-cli state=present 
+  when: ansible_distribution == 'MacOSX'
+- name: install from brew
+  homebrew: name=cf-cli state=present
+  when: ansible_distribution == 'MacOSX'
+
+- name: add cloudfoundry apt key
+  apt_key:
+    url: "{{ cf_apt_key_url }}"
+    state: present
+  when: ansible_distribution == 'Ubuntu'
+- name: add cloudfoundry apt repository
+  apt_repository:
+    repo: "{{ cf_apt_repo }}"
+    state: present
+  when: ansible_distribution == 'Ubuntu'
+- name: install cf-cli
+  package: name=cf-cli state=present
+  when: ansible_distribution == 'Ubuntu'
