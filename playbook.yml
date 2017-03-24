@@ -6,26 +6,24 @@
   # - key: value
 
   roles:
-  - { role: atom, tags: ['atom'] }
-  - { role: cf, tags: ['cf'] }
-  - { role: chrome, tags: ['chrome'] }
-  - { role: cli-utils, tags: ['cli-utils'] }
-  - role: dev-env
-    tags:
-    - dev-env
-    - golang
-  - { role: docker, tags: ['docker'] }
-  - { role: dropbox, tags: ['dropbox'] }
-  - { role: firefox, tags: ['firefox'] }
-  - { role: git, tags: ['git'] }
-  - { role: golang, tags: ['golang'] }
-  - { role: intellij, tags: ['intellij'] }
-  - { role: iterm2, tags: ['iterm2'] }
-  - { role: java, tags: ['java'] }
-  - { role: k8s, tags: ['k8s']}
-  - { role: oh-my-zsh, tags: ['oh-my-zsh'] }
-  - { role: scala, tags: ['scala'] }
-  - { role: vagrant, tags: ['vagrant'] }
-  - { role: vim, tags: ['vim'] }
-  - { role: virtualbox, tags: ['virtualbox'] }
-  - { role: vlc, tags: ['vlc'] }
+  - { role: atom,         tags: ['atom'] }
+  - { role: cf,           tags: ['cf'] }
+  - { role: chrome,       tags: ['chrome'] }
+  - { role: cli-utils,    tags: ['cli-utils'] }
+  - { role: dev-env,      tags: ['dev-env'] }
+  - { role: docker,       tags: ['docker'] }
+  - { role: dropbox,      tags: ['dropbox'] }
+  - { role: firefox,      tags: ['firefox'] }
+  - { role: git,          tags: ['git'] }
+  - { role: golang,       tags: ['golang'] }
+  - { role: intellij,     tags: ['intellij'] }
+  - { role: iterm2,       tags: ['iterm2'] }
+  - { role: java,         tags: ['java'] }
+  - { role: k8s,          tags: ['k8s']}
+  - { role: oh-my-zsh,    tags: ['oh-my-zsh'] }
+  - { role: packer,       tags: ['packer']}
+  - { role: scala,        tags: ['scala'] }
+  - { role: vagrant,      tags: ['vagrant'] }
+  - { role: vim,          tags: ['vim'] }
+  - { role: virtualbox,   tags: ['virtualbox'] }
+  - { role: vlc,          tags: ['vlc'] }

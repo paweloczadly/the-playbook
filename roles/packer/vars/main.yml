@@ -1,0 +1,4 @@
+---
+packer_url: https://releases.hashicorp.com/packer/0.12.3/packer_0.12.3_linux_amd64.zip?_ga=1.41665185.2041193240.1490342504
+packer_download_dest: /tmp/packer.zip
+packer_dest: /usr/local/bin
