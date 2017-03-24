@@ -5,3 +5,4 @@ cli_utils:
   - bash-completion
   - watch
   - tree
+  - wget
