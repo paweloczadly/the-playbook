@@ -6,4 +6,3 @@ cli_utils:
   - watch
   - tree
   - wget
-  - unzip
