@@ -39,25 +39,26 @@ $ ansible-playbook  --tags atom playbook.yml
 
 ## Compatibility
 
-| Role           | Mac OS X       | Ubuntu         |
-| :------------- | :------------- | :------------- |
-| atom           | (X)            |                |
-| cf             | (X)            | (X)            |
-| chrome         | (X)            |                |
-| cli-utils      | (X)            | (X)            |
-| dev-env        | (X)            | (X)            |
-| docker         | (X)            | (X)            |
-| dropbox        | (X)            |                |
-| firefox        | (X)            |                |
-| git            | (X)            | (X)            |
-| golang         | (X)            | (X)            |
-| intellij       | (X)            |                |
-| iterm2         | (X)            |                |
-| java           | (X)            | (X)            |
-| k8s            | (X)            |                |
-| oh-my-zsh      | (X)            |                |
-| scala          | (X)            |                |
-| vagrant        | (X)            |                |
-| vim            | (X)            | (X)            |
-| virtualbox     | (X)            |                |
-| vlc            | (X)            |                ||
+| Role           | Mac OS X       | Ubuntu         | Mint           |
+| :------------- | :------------- | :------------- | :------------- |
+| atom           | (X)            |                |                |
+| cf             | (X)            | (X)            |                |
+| chrome         | (X)            |                |                |
+| cli-utils      | (X)            | (X)            | (X)            |
+| dev-env        | (X)            | (X)            | (X)            |
+| distribution   | (X)            | (X)            | (X)            |
+| docker         | (X)            | (X)            | (X)            |
+| dropbox        | (X)            |                |                |
+| firefox        | (X)            |                |                |
+| git            | (X)            | (X)            | (X)            |
+| golang         | (X)            | (X)            |                |
+| intellij       | (X)            |                |                |
+| iterm2         | (X)            |                |                |
+| java           | (X)            | (X)            |                |
+| k8s            | (X)            |                |                |
+| oh-my-zsh      | (X)            |                |                |
+| scala          | (X)            |                |                |
+| vagrant        | (X)            |                |                |
+| vim            | (X)            | (X)            | (X)            |
+| virtualbox     | (X)            |                |                |
+| vlc            | (X)            |                |                ||

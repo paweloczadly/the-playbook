@@ -20,4 +20,4 @@
   package: name=docker.io state=present
   become: yes
   become_method: sudo
-  when: ansible_distribution == 'Ubuntu'
+  when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Linuxmint'

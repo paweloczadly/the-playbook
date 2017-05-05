@@ -11,6 +11,7 @@
   - { role: chrome,       tags: ['chrome'] }
   - { role: cli-utils,    tags: ['cli-utils'] }
   - { role: dev-env,      tags: ['dev-env'] }
+  - { role: distribution, tags: ['distribution'] }
   - { role: docker,       tags: ['docker'] }
   - { role: dropbox,      tags: ['dropbox'] }
   - { role: firefox,      tags: ['firefox'] }
