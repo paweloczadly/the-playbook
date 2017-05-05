@@ -7,6 +7,7 @@
 
   roles:
   - { role: atom,         tags: ['atom'] }
+  - { role: bash,         tags: ['bash'] }
   - { role: cf,           tags: ['cf'] }
   - { role: chrome,       tags: ['chrome'] }
   - { role: cli-utils,    tags: ['cli-utils'] }

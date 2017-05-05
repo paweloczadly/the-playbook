@@ -1,0 +1,4 @@
+---
+- name: .zshrc
+  template: src=.bash_profile dest={{ ansible_env.HOME }}/.bash_profile
+  when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Linuxmint'

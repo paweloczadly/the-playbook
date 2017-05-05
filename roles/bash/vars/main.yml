@@ -1,0 +1,5 @@
+---
+bash_user_options: |
+  # GOLANG setup:
+  export GOPATH={{ go_path }}
+  export PATH=$GOPATH/bin:$PATH

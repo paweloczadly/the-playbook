@@ -42,6 +42,7 @@ $ ansible-playbook  --tags atom playbook.yml
 | Role           | Mac OS X       | Ubuntu         | Mint           |
 | :------------- | :------------- | :------------- | :------------- |
 | atom           | (X)            |                |                |
+| bash           |                | (X)            | (X)            |
 | cf             | (X)            | (X)            |                |
 | chrome         | (X)            |                |                |
 | cli-utils      | (X)            | (X)            | (X)            |
