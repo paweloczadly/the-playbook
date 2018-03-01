@@ -4,7 +4,6 @@
 "PATHOGEN"
 execute pathogen#infect()
 execute pathogen#helptags()
-filetype plugin indent on
 
 "GENERAL"
 set tabstop=2
