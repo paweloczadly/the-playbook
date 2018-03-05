@@ -1,3 +1,5 @@
 ---
-- name: setup ~/.gitconfig 
-  template: src=.gitconfig dest={{ ansible_env.HOME }}/.gitconfig 
+- name: setup ~/.gitconfig
+  template: src=.gitconfig dest={{ ansible_env.HOME }}/.gitconfig
+- name: setup ~/.gitignore_global
+  template: src=.gitignore_global dest={{ ansible_env.HOME }}/.gitignore_global

@@ -1,0 +1,10 @@
+# Terraform
+.terraform
+terraform.plan
+passwords.tfvars
+
+# Ansible Vault
+vault_pass.txt
+
+# tmp dir
+tmp

@@ -8,3 +8,6 @@
   {% for key, value in git_aliases.iteritems() %}
   {{ key }} = {{ value }}
   {% endfor %}
+
+[core]
+  excludesfile = {{ ansible_env.HOME }}/.gitignore_global
